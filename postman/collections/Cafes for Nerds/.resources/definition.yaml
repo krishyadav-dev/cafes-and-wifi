@@ -1,0 +1,30 @@
+$kind: collection
+description: |-
+  # Cafes for Nerds
+
+  A RESTful API collection for managing a curated database of cafes — ideal for remote workers, developers, and digital nomads who need a great spot to work from.
+
+  Built on a Flask + SQLAlchemy backend running locally, this collection covers the full CRUD lifecycle for cafe records:
+
+  ## Endpoints
+
+  | Method | Endpoint | Description |
+  | --- | --- | --- |
+  | GET | `/all` | Retrieve all cafes, sorted alphabetically |
+  | GET | `/random` | Get a randomly selected cafe |
+  | GET | `/search?loc={location}` | Search cafes by location |
+  | POST | `/suggest` | Add a new cafe (name, location, amenities, price) |
+  | PATCH | `/update-price/{id}` | Update the coffee price for a specific cafe |
+  | DELETE | `/report-closed/{id}` | Remove a cafe (requires API key) |
+
+  ## Cafe Attributes
+
+  Each cafe record includes amenity flags such as `has_wifi`, `has_sockets`, `has_toilet`, and `can_take_calls`, along with seating capacity, a map URL, an image, and a coffee price — everything you need to find the perfect place to code.
+
+  ## Authentication
+
+  The delete endpoint is protected by an API key passed as a query parameter (`api-key`).
+
+  ## Base URL
+
+  `http://127.0.0.1:5000` — run `main.py` locally before sending requests.

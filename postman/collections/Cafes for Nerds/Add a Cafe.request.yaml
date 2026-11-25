@@ -1,0 +1,48 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5000/suggest
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Timberyard
+      disabled: false
+    - type: text
+      key: map_url
+      value: https://maps.app.goo.gl/zKH8cx9ybUhDdCkF9
+      disabled: false
+    - type: text
+      key: img_url
+      value: https://b.zmtcdn.com/data/pictures/2/19389082/09e0874c9525d5bd09bb4b514a014834.png
+      disabled: false
+    - type: text
+      key: location
+      value: 2928, 3rd Floor, VV Mohalla, Gokulam, Mysore
+      disabled: false
+    - type: text
+      key: seats
+      value: 10-20
+      disabled: false
+    - type: text
+      key: has_sockets
+      value: "false"
+      disabled: false
+    - type: text
+      key: has_wifi
+      value: "true"
+      disabled: false
+    - type: text
+      key: has_toilet
+      value: "true"
+      disabled: false
+    - type: text
+      key: can_take_calls
+      value: "true"
+      disabled: false
+    - type: text
+      key: coffee_price
+      value: Rs.70
+      disabled: false
+order: 4000
