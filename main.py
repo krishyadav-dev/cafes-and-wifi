@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import random, os
 
 load_dotenv()
-app = Flask(__nam+e__)
+app = Flask(__name__)
 
 VERIFIER = os.environ["VERIFIER"]
 # CREATE DB

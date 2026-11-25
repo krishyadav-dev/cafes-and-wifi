@@ -2,6 +2,15 @@
 workspace:
   id: 62ac7c9b-3b36-4bec-856e-86d3b0590065
 
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+cloudResources:
+  collections:
+    ../postman/collections/Cafes for Nerds: 59805123-4f506b6d-267e-4cd5-a3c5-dc1a521fd65d
+  environments:
+    ../postman/environments/.env.environment.yaml: 59805123-fa6a0a80-010c-4934-ae3c-3e0bc33ec1ce
+  globals:
+    ../postman/globals/workspace.globals.yaml: 4b3ba5ea-052d-4c6b-8b68-a4110814ee41
+
 # All resources in the `postman/` folder are automatically registered in Local View.
 # Point to additional files outside the `postman/` folder to register them individually. Example:
 #localResources:
